@@ -1,0 +1,21 @@
+---
+abstract: 'Spreadsheet::WriteExcel plugin'
+author:
+  - 'Zak B. Elep <zakame@cpan.org>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200009, CPAN::Meta::Converter version 2.110930001'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Mojolicious-Plugin-WriteExcel
+requires:
+  Mojolicious: 0.999930
+  Spreadsheet::WriteExcel::Simple: 0
+resources:
+  repository: git://github.com/zakame/mojox-renderer-writeexcel.git
+version: 2.00
