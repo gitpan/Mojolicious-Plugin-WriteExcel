@@ -10,7 +10,7 @@ perlcritic.rc
 t/00-load.t
 t/author-critic.t
 t/manifest.t
+t/release-app.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
-t/release-renderer.t
 t/renderer.t

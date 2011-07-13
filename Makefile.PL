@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Spreadsheet::WriteExcel plugin',
+  'ABSTRACT' => 'write Excel spreadsheets from Mojolicious',
   'AUTHOR' => 'Zak B. Elep <zakame@cpan.org>',
   'BUILD_REQUIRES' => {
     'Test::More' => '0'
@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
     'Mojolicious' => '0.999930',
     'Spreadsheet::WriteExcel::Simple' => '0'
   },
-  'VERSION' => '2.00',
+  'VERSION' => '2.01',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Mojolicious-Plugin-WriteExcel,
-version 2.00:
+version 2.01:
 
-  Spreadsheet::WriteExcel plugin
+  write Excel spreadsheets from Mojolicious
 
 This software is copyright (c) 2011 by Zak B. Elep.
 
