@@ -3,7 +3,7 @@ package Mojolicious::Plugin::WriteExcel;
 use Mojo::Base 'Mojolicious::Plugin';
 use Spreadsheet::WriteExcel::Simple;
 
-our $VERSION = '2.0';
+our $VERSION = '2.02';
 
 # You just have to give guys a chance. Sometimes you meet a guy and
 # think he's a pig, but then later on you realize he actually has a
@@ -13,6 +13,9 @@ sub xls_renderer {
 
   # don't let MojoX::Renderer to encode output to string
   delete $options->{encoding};
+
+  # tell the renderer we're not html
+  $options->{format} = 'xls';
 
   my $ss       = Spreadsheet::WriteExcel::Simple->new;
   my $heading  = $c->stash->{heading};
@@ -36,6 +39,8 @@ sub xls_renderer {
   }
 
   $$output = $ss->data;
+
+  return 1;
 }
 
 sub register {
@@ -118,6 +123,10 @@ spreadsheets.
 
 Register renderer in L<Mojolicious> application.
 
+=head1 AUTHOR
+
+Zak B. Elep <zakame@cpan.org>
+
 =head1 ACKNOWLEDGEMENTS
 
 Thanks to Graham Barr and his L<MojoX::Renderer::YAML> module, and
@@ -126,6 +135,13 @@ how to write renderers for L<Mojolicious>!
 
 Inspiration for this renderer came from this mailing list thread:
 L<http://www.mail-archive.com/plug@lists.linux.org.ph/msg21881.html>
+
+=head1 LICENSE
+
+Copyright 2013 Zak B. Elep
+
+This library is free software; yu can redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =head1 SEE ALSO
 

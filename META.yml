@@ -5,17 +5,29 @@ author:
 build_requires:
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build::Tiny: 0.025
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200009, CPAN::Meta::Converter version 2.110930'
+generated_by: 'Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Mojolicious-Plugin-WriteExcel
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
 requires:
   Mojolicious: 0.999930
   Spreadsheet::WriteExcel::Simple: 0
 resources:
-  repository: git://github.com/zakame/mojox-renderer-writeexcel.git
-version: 2.01
+  bugtracker: https://github.com/zakame/mojox-renderer-writeexcel/issues
+  homepage: https://github.com/zakame/mojox-renderer-writeexcel
+  repository: https://github.com/zakame/mojox-renderer-writeexcel.git
+version: 2.02
+x_contributors:
+  - 'Zak B. Elep <zakame@zakame.net>'
