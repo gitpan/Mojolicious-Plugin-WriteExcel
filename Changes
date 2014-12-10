@@ -1,6 +1,9 @@
 Revision history for Mojolicious-Plugin-WriteExcel (formerly known as
 MojoX-Renderer-WriteExcel)
 
+2.04 2014-12-10T07:48:21Z
+        Require Mojo 4.0 or newer, Closes #2
+
 2.03 2014-12-08T10:05:37Z
         Remove use of Mojo::IOLoop for test, Closes #1
         Switch build to Minilla
